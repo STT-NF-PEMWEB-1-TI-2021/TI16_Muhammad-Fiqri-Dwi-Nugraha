@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Kurs Rupiah</title>
+
+    <script>
+      function kurs() {
+        let d = Number(document.getElementById('dollar').value);
+        let r = d * 14650;
+        document.getElementById('rupiah').value = r;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Menghitung Kurs Rupiah</h3>
+    <form id="form1">
+      <input type="text" id="dollar" value="$" onchange="kurs()" />
+      <input type="text" id="rupiah" value="Rp." />
+    </form>
+  </body>
+</html>
